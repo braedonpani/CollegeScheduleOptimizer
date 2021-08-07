@@ -1,16 +1,33 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+# Schedule with and ID number and list of sections
+class Schedule:
+    def __init__(self, id, sections):
+        self.id = id
+        self.sections = sections
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Course with its list of sections
+class Course:
+    def __init__(self, name, sections):
+        self.name = name
+        self.sections = sections
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# Section of a course with an ID number and list of meeting times
+class Section:
+    def __init__(self, id, classes):
+        self.id = id
+        self.classes = classes
+
+
+# Description of a time when a certain course meets
+class MeetingTime:
+    def __init__(self, weekday, timeperiod):
+        self.weekday = weekday
+        self.timeperiod = timeperiod
+
+
+# Period of Time in Military Notation
+class TimePeriod:
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
